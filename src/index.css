@@ -1,13 +1,147 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  background-color: white !important;
+}
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: #565383 !important;
+}
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.menu-active {
+  font-size: bold;
+  border-bottom: 1px solid #565383;
+}
+.navbar a:hover {
+  color: lightseagreen !important;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 400px;
+  margin-top: 55px;
+}
+
+.img-animate {
+  height: 500px;
+  position: relative;
+  animation: up-down 2s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(13px);
+  }
+  100% {
+    transform: translateY(-13px);
+  }
+}
+
+h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-left: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.btn {
+  color: #28d48c;
+  padding: 15px;
+  width: 170px;
+  transition: 1s;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 10px;
+  margin-left: 5px;
+  border: 1px solid blue;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Cards {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn {
+  padding: 10px;
+  margin: 10px;
+  width: 170px;
+  border: 1px solid cornflowerblue;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: cornflowerblue;
+}
+h3 {
+  padding-top: 15px;
+  letter-spacing: 2px;
+  font-family: Arial Black;
+  font-size: 4rem;
+  color: rgb(125, 125, 252);
+}
+
+#card_text {
+  padding: 10px;
+  font-size: 25px;
+  font-family: Nunito, sans-serif;
+}
+#author {
+  display: flex;
+  justify-content: flex-end;
+  color: red;
+  font-size: 20px;
+  font-family: Nunito, sans-serif;
+}
+.quotes_btn {
+  text-transform: capitalize;
+  padding: 10px;
+  border: none;
+  background-color: #28d48c;
+  color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+}
+@media (max-width: 480px) {
+  .img-animate {
+    height: auto;
+  }
+  img {
+    height: 220px;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .img-animate {
+    height: auto;
+  }
+  img {
+    height: 180px;
+  }
+}
+
+.container {
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
